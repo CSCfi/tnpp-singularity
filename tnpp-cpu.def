@@ -1,0 +1,8 @@
+Bootstrap: docker
+From: turkunlp/turku-neural-parser:latest-fi-en-sv-cpu
+
+%environment
+  export MPLBACKEND=pdf
+
+%post
+  chmod a+r /app/models_fi_tdt/Data/fi.vectors
